@@ -26,6 +26,17 @@ Como falado anteriormente o foco da plataforma é ajudar estudantes seja do ensi
 Após uma análise do nosso programa buscamos no mercado produtos concorrentes e foi identificado que existem alguns que possuem funções parcialmente parecidas ou até mesmo diferentes com o que estamos desenvolvendo, porém estão subdivido entre outros programas, ou seja, deve instalar cada um para que se obtenha o resultado desejado. Com isso conseguiremos obter um melhor desenvolvimento para que o a plataforma contenha tudo em um único só lugar, sem que haja a necessidade de usar programa por programa.
 
 ---
+
+## :rocket: Iniciando o projeto
+Para iniciar o projeto, é necessário ter instalado em sua máquina o **Java 17** e o **Maven**.
+Após a instalação, basta executar o comando abaixo para iniciar o projeto:
+
+```bash
+./mvnw spring-boot:run
+```
+
+
+---
 - [+Studying — API](#studying--api)
   - [:thinking: Sobre o projeto](#thinking-sobre-o-projeto)
   - [Endpoints da API](#endpoints-da-api)
@@ -126,7 +137,7 @@ Retorna todos os usuários cadastrados no sistema.
     {
         "id": 1,
         "plano": {
-            "id": "id"
+            "id": "1"
         },
         "nome": "Caio Gallo Barreira",
         "dataNascimento": "1995-03-22",
@@ -156,7 +167,7 @@ Retorna um usuário específico cadastrado no sistema.
 {
     "id": 1,
     "plano": {
-        "id": "id"
+        "id": "1"
     },
     "nome": "Caio Gallo Barreira",
     "dataNascimento": "1995-03-22",
@@ -198,7 +209,7 @@ Cadastra um novo usuário no sistema.
 ```json
 {
     "plano": {
-        "id": "id"
+        "id": "1"
     },
     "nome": "Caio Gallo Barreira",
     "dataNascimento": "1995-03-22",
@@ -240,7 +251,7 @@ Atualiza um usuário específico cadastrado no sistema.
 ```json
 {
     "plano": {
-        "id": "id"
+        "id": "1"
     },
     "nome": "Caio Gallo Barreira",
     "dataNascimento": "1995-03-22",
