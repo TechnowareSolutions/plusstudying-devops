@@ -30,10 +30,16 @@ stages:
       vmImage: $(vmImageName)
 
     steps:
-    - task: Maven@3
+    - task: Maven@4
       displayName: 'Maven Package'
       inputs:
         mavenPomFile: 'pom.xml'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.17'
+        mavenVersionOption: 'Default'
+        mavenAuthenticateFeed: false
+        effectivePomSkip: false
+        sonarQubeRunAnalysis: false
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
