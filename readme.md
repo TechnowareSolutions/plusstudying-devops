@@ -35,6 +35,16 @@ Após a instalação, basta executar o comando abaixo para iniciar o projeto:
 ./mvnw spring-boot:run
 ```
 
+---
+
+## :rocket: Rodando no Azure Pipelines
+
+1. Importe o arquivo ``PipelineCI.yaml`` para o seu Azure Pipelines
+2. Crie uma nova Release e faça a seguinte configuração, linkando com o Pipeline importado:
+<img src="https://i.imgur.com/gLq9EyE.png"/>
+3. Entre dentro do job e altere a task de importar para o Azure Web App com as informações a baixo: 
+<img src="https://i.imgur.com/L8zKhmu.png"/>
+
 
 ---
 - [+Studying — API](#studying--api)
